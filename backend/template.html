@@ -1,0 +1,4862 @@
+<style>
+  :root {
+    --anakiwa: #9bdbff;
+    --baby-powder: #fffdfb;
+    --black: #000000;
+    --black-2: #0000008c;
+    --blue-jeans: #53bffd;
+    --bon-jour: #dfdfdf;
+    --carnation-pink: #ff9bc5a3;
+    --concrete: #f2f3f3;
+    --desert-storm: #f8f8f8;
+    --eerie-black: #191a1a;
+    --mist-gray: #c4c4c4;
+    --storm-dust: #6b6464;
+    --tickle-me-pink: #fd77af;
+    --white: #ffffff;
+
+    --font-size-l: 25px;
+    --font-size-l2: 26px;
+    --font-size-m: 22px;
+    --font-size-xxl: 30px;
+    --font-size-xxl2: 36px;
+    --font-size-xxxl: 35px;
+    --font-size-xxxl2: 45px;
+    --font-size-xxxxl2: 60px;
+    --font-size-xxxxxxl: 50px;
+
+    --font-family-noto_sans: "Noto Sans", Helvetica;
+    --font-family-poppins: "Poppins", Helvetica;
+  }
+  .poppins-bold-black-36px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-black-26px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-carnation-pink-35px {
+    color: var(--carnation-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-extra-light-black-22px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 200;
+  }
+  .poppins-normal-black-22px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  .poppins-bold-anakiwa-22px {
+    color: var(--anakiwa);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-normal-blue-jeans-35px {
+    color: var(--blue-jeans);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  .poppins-bold-blue-jeans-26px {
+    color: var(--blue-jeans);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-anakiwa-25px {
+    color: var(--anakiwa);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-white-26px {
+    color: var(--white);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-carnation-pink-25px {
+    color: var(--carnation-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-eerie-black-26px {
+    color: var(--eerie-black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-normal-storm-dust-45px {
+    color: var(--storm-dust);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl2);
+    font-style: normal;
+    font-weight: 400;
+  }
+  .poppins-medium-white-22px {
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+  .poppins-medium-anakiwa-22px {
+    color: var(--anakiwa);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+  .poppins-medium-carnation-pink-22px {
+    color: var(--carnation-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+  }
+  .poppins-medium-black-30px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 500;
+  }
+  .poppins-bold-black-35px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-white-26px-2 {
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-tickle-me-pink-26px {
+    color: var(--tickle-me-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-bold-blue-jeans-45px {
+    color: var(--blue-jeans);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl2);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .poppins-light-tickle-me-pink-25px {
+    color: var(--tickle-me-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l);
+    font-style: italic;
+    font-weight: 300;
+  }
+  .poppins-medium-tickle-me-pink-60px {
+    color: var(--tickle-me-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxxl2);
+    font-style: normal;
+    font-weight: 500;
+  }
+  .border-1px-bon-jour {
+    border: 1px solid var(--bon-jour);
+  }
+
+  .hospital-selected-map-view {
+    background-color: var(--baby-powder);
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  .hospital-selected-map-view .address {
+    height: 22px;
+    left: 804px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 516px;
+    width: 286px;
+  }
+  .hospital-selected-map-view .average-wait-time {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 273px;
+    mix-blend-mode: normal;
+    width: 273px;
+  }
+  .hospital-selected-map-view .book-an-appoitment {
+    height: 15px;
+    letter-spacing: 0;
+    min-height: 15px;
+    min-width: 280px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 280px;
+  }
+  .hospital-selected-map-view .borough {
+    height: 22px;
+    left: 64px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 128px;
+    width: 273px;
+  }
+  .hospital-selected-map-view .borough-1 {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 273px;
+    mix-blend-mode: normal;
+    width: 273px;
+  }
+  .hospital-selected-map-view .capacity {
+    height: 22px;
+    left: 570px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 459px;
+    width: 199px;
+  }
+  .hospital-selected-map-view .date {
+    left: 795px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 566px;
+    width: 166px;
+  }
+  .hospital-selected-map-view .distance {
+    height: 22px;
+    left: 570px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 515px;
+    width: 213px;
+  }
+  .hospital-selected-map-view .ellipse {
+    height: 36px;
+    left: 4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 6px;
+    width: 37px;
+  }
+  .hospital-selected-map-view .ellipse-2 {
+    background-color: var(--blue-jeans);
+    border-radius: 23px;
+    height: 46px;
+    left: 0;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 46px;
+  }
+  .hospital-selected-map-view .group-33 {
+    align-items: flex-start;
+    display: flex;
+    height: 57px;
+    left: 592px;
+    min-width: 216px;
+    position: absolute;
+    top: 757px;
+  }
+  .hospital-selected-map-view .group-36 {
+    align-items: flex-start;
+    display: flex;
+    height: 40px;
+    left: 683px;
+    min-width: 160px;
+    position: absolute;
+    top: 661px;
+  }
+  .hospital-selected-map-view .group-37 {
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    left: 623px;
+    min-width: 310px;
+    position: absolute;
+    top: 763px;
+  }
+  .hospital-selected-map-view .group-38 {
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    left: 696px;
+    min-width: 161px;
+    position: absolute;
+    top: 701px;
+  }
+  .hospital-selected-map-view .image-1428 {
+    height: 44px;
+    left: 614px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 340px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1429 {
+    height: 44px;
+    left: 348px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 617px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1430 {
+    height: 44px;
+    left: 526px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 763px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1431 {
+    height: 44px;
+    left: 872px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 468px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1432 {
+    height: 44px;
+    left: 372px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 395px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1433 {
+    height: 44px;
+    left: 252px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 719px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1434 {
+    height: 44px;
+    left: 974px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 763px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1435 {
+    height: 84px;
+    left: 1124px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 525px;
+    width: 84px;
+  }
+  .hospital-selected-map-view .image-1436 {
+    height: 44px;
+    left: 1030px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 318px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .image-1437 {
+    height: 44px;
+    left: 416px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 243px;
+    width: 44px;
+  }
+  .hospital-selected-map-view .maps-markers-cu-location-marker {
+    align-items: flex-start;
+    background-color: var(--blue-jeans);
+    display: flex;
+    height: 46px;
+    left: 1244px;
+    min-width: 46px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 594px;
+  }
+  .hospital-selected-map-view .open {
+    height: 14px;
+    left: 570px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 572px;
+    width: 189px;
+  }
+  .hospital-selected-map-view .overlap-group {
+    align-items: flex-end;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-24@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    left: 1232px;
+    min-width: 173px;
+    padding: 17px 20.5px;
+    position: absolute;
+    top: 159px;
+  }
+  .hospital-selected-map-view .overlap-group1 {
+    height: 1034px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1444px;
+  }
+  .hospital-selected-map-view .overlap-group10 {
+    background-color: var(--blue-jeans);
+    border-radius: 23px;
+    height: 46px;
+    position: relative;
+    width: 46px;
+  }
+  .hospital-selected-map-view .overlap-group2 {
+    height: 120px;
+    left: 7px;
+    position: absolute;
+    top: -18px;
+    width: 1550px;
+  }
+  .hospital-selected-map-view .overlap-group3 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-27@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    left: 438px;
+    min-width: 367px;
+    padding: 16px 14.5px;
+    position: absolute;
+    top: 159px;
+  }
+  .hospital-selected-map-view .overlap-group4 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-25@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    left: 42px;
+    min-width: 368px;
+    padding: 16px 19.0px;
+    position: absolute;
+    top: 159px;
+  }
+  .hospital-selected-map-view .overlap-group5 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-27@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    left: 834px;
+    min-width: 367px;
+    padding: 16px 18.0px;
+    position: absolute;
+    top: 159px;
+  }
+  .hospital-selected-map-view .overlap-group6 {
+    align-items: flex-end;
+    background-color: #cfd4d4;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    min-width: 214px;
+    padding: 17px 25.0px;
+  }
+  .hospital-selected-map-view .overlap-group6-1 {
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: -3px;
+    width: 1445px;
+  }
+  .hospital-selected-map-view .overlap-group7 {
+    align-items: flex-end;
+    background-color: var(--anakiwa);
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    min-width: 158px;
+    padding: 11.9px 17.9px;
+  }
+  .hospital-selected-map-view .overlap-group8 {
+    align-items: flex-end;
+    background-color: var(--carnation-pink);
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    min-width: 308px;
+    padding: 12px 9px;
+  }
+  .hospital-selected-map-view .overlap-group9 {
+    align-items: flex-end;
+    background-color: var(--anakiwa);
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    min-width: 159px;
+    padding: 12px 3.7px;
+  }
+  .hospital-selected-map-view .percent {
+    height: 22px;
+    left: 804px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 458px;
+    width: 286px;
+  }
+  .hospital-selected-map-view .place {
+    height: 15px;
+    letter-spacing: 0;
+    min-height: 15px;
+    min-width: 119px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 119px;
+  }
+  .hospital-selected-map-view .place-1 {
+    height: 15px;
+    letter-spacing: 0;
+    min-height: 15px;
+    min-width: 146px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 146px;
+  }
+  .hospital-selected-map-view .place-2 {
+    height: 22px;
+    left: 570px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 350px;
+    width: 199px;
+  }
+  .hospital-selected-map-view .place-3 {
+    height: 22px;
+    left: 804px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 354px;
+    width: 286px;
+  }
+  .hospital-selected-map-view .place-4 {
+    color: var(--eerie-black);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-l2);
+    font-weight: 700;
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 160px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 160px;
+  }
+  .hospital-selected-map-view .polygon-6 {
+    align-self: center;
+    height: 12px;
+    margin-bottom: 1.0px;
+    margin-left: 31px;
+    mix-blend-mode: normal;
+    width: 23px;
+  }
+  .hospital-selected-map-view .polygon-7 {
+    align-self: center;
+    height: 12px;
+    margin-bottom: 1.0px;
+    margin-left: 37px;
+    mix-blend-mode: normal;
+    width: 24px;
+  }
+  .hospital-selected-map-view .polygon-8 {
+    align-self: center;
+    height: 12px;
+    margin-bottom: 1.0px;
+    margin-left: 31px;
+    mix-blend-mode: normal;
+    width: 24px;
+  }
+  .hospital-selected-map-view .profile-i60144323 {
+    cursor: pointer;
+    height: 36px;
+    left: 872px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 373px;
+  }
+  .hospital-selected-map-view .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    left: 154px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 62px;
+    width: 199px;
+  }
+  .hospital-selected-map-view .rectangle-29 {
+    height: 791px;
+    left: 2px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 243px;
+    width: 1442px;
+  }
+  .hospital-selected-map-view .rectangle-34 {
+    background-color: var(--white);
+    border: 5px solid var(--blue-jeans);
+    box-shadow: 4px 4px 20px #53bffd;
+    height: 515px;
+    left: 535px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 328px;
+    width: 483px;
+  }
+  .hospital-selected-map-view .rectangle-34-1 {
+    height: 57px;
+    left: 821px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 757px;
+    width: 172px;
+  }
+  .hospital-selected-map-view .rectangle-42 {
+    height: 72px;
+    left: 406px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .hospital-selected-map-view .rectangle-43 {
+    height: 70px;
+    left: 834px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .hospital-selected-map-view .request-a-volunteer {
+    cursor: pointer;
+    height: 36px;
+    left: 422px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 401px;
+  }
+  .hospital-selected-map-view .search {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 129px;
+    mix-blend-mode: normal;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    width: 129px;
+  }
+  .hospital-selected-map-view .track-3 {
+    height: 96px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    width: 120px;
+  }
+  .hospital-selected-map-view .vector-1 {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 71px;
+    width: 1445px;
+  }
+  .hospital-selected-map-view .volunteer {
+    height: 69px;
+    left: 105px;
+    position: absolute;
+    top: 29px;
+    width: 1445px;
+  }
+  .hospital-selected-map-view .volunteer-i6014436 {
+    cursor: pointer;
+    height: 36px;
+    left: 154px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 13px;
+    width: 243px;
+  }
+  .hospital-selected-map-view .wait-time {
+    height: 22px;
+    left: 570px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 403px;
+    width: 199px;
+  }
+  .hospital-selected-map-view .wait-time-1 {
+    height: 22px;
+    left: 832px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 119px;
+    width: 245px;
+  }
+  .hospital-selected-map-view .x15-20-mintues {
+    height: 22px;
+    left: 804px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 405px;
+    width: 286px;
+  }
+  .hospital-selected-map-view .x29-14 {
+    height: 120px;
+    left: 1313px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .hospital-selected-map-view .zip-code {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 273px;
+    mix-blend-mode: normal;
+    width: 273px;
+  }
+  .hospital-selected-map-view .zip-code-1 {
+    height: 22px;
+    left: 453px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 128px;
+    width: 245px;
+  }
+  .tracker {
+    align-items: flex-end;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .tracker .before {
+    height: 21px;
+    margin-top: 5px;
+    mix-blend-mode: normal;
+    width: 81px;
+  }
+  .tracker .bxbx-search {
+    height: 54px;
+    left: 7px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    width: 54px;
+  }
+  .tracker .bxbx-search-1 {
+    height: 65px;
+    left: 35px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 34px;
+    width: 68px;
+  }
+  .tracker .c-19-tracker-data {
+    left: 465px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 132px;
+    width: 618px;
+  }
+  .tracker .check-for-these-syptoms {
+    height: 38px;
+    margin-right: 27.0px;
+    mix-blend-mode: normal;
+    width: 444px;
+  }
+  .tracker .coughing {
+    height: 200px;
+    left: 41px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 56px;
+    width: 200px;
+  }
+  .tracker .coughing-1 {
+    left: 25px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+    width: 203px;
+  }
+  .tracker .d {
+    left: 41px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 174px;
+    width: 127px;
+  }
+  .tracker .fever {
+    left: 11px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 22px;
+    width: 203px;
+  }
+  .tracker .fever-1 {
+    height: 200px;
+    left: 36px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 54px;
+    width: 200px;
+  }
+  .tracker .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 186px;
+    min-height: 161px;
+    position: absolute;
+    top: 787px;
+    width: 56px;
+  }
+  .tracker .flex-col-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 809px;
+    min-height: 634px;
+    position: absolute;
+    top: 284px;
+    width: 562px;
+  }
+  .tracker .flex-col-2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 560px;
+    width: 250px;
+  }
+  .tracker .flex-row {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 28px;
+    min-width: 562px;
+  }
+  .tracker .flex-row-1 {
+    align-items: flex-start;
+    display: flex;
+    margin-right: -1.77px;
+    margin-top: 15px;
+    min-width: 1282px;
+  }
+  .tracker .group- {
+    align-items: flex-start;
+    display: flex;
+    height: 250px;
+    left: 0;
+    min-width: 250px;
+    position: absolute;
+    top: 0;
+  }
+  .tracker .group-17 {
+    cursor: pointer;
+    height: 57px;
+    margin-left: 345px;
+    width: 463px;
+  }
+  .tracker .group-55 {
+    align-items: flex-start;
+    display: flex;
+    height: 184px;
+    left: 84px;
+    min-width: 141px;
+    position: absolute;
+    top: 241px;
+  }
+  .tracker .group-61 {
+    align-items: flex-start;
+    display: flex;
+    height: 250px;
+    left: 0;
+    min-width: 250px;
+    position: absolute;
+    top: 306px;
+  }
+  .tracker .headache {
+    left: 18px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    width: 203px;
+  }
+  .tracker .headache-1 {
+    height: 200px;
+    left: 35px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 49px;
+    width: 200px;
+  }
+  .tracker .last-5-weeks {
+    height: 20px;
+    margin-left: 85px;
+    margin-top: 5.5px;
+    mix-blend-mode: normal;
+    width: 165px;
+  }
+  .tracker .m {
+    left: 474px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 174px;
+    width: 35px;
+  }
+  .tracker .now {
+    height: 19px;
+    margin-left: 86px;
+    margin-top: 6px;
+    mix-blend-mode: normal;
+    width: 56px;
+  }
+  .tracker .overlap-group {
+    height: 473px;
+    left: 296px;
+    position: absolute;
+    top: 475px;
+    width: 353px;
+  }
+  .tracker .overlap-group-1 {
+    border-radius: 4.349999904632568px;
+    height: 250px;
+    position: relative;
+    width: 250px;
+  }
+  .tracker .overlap-group1 {
+    height: 120px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1468px;
+  }
+  .tracker .overlap-group10 {
+    height: 948px;
+    margin-right: -11px;
+    margin-top: -12px;
+    position: relative;
+    width: 1468px;
+  }
+  .tracker .overlap-group2 {
+    height: 567px;
+    margin-left: 62px;
+    position: relative;
+    width: 250px;
+  }
+  .tracker .overlap-group3 {
+    height: 250px;
+    position: relative;
+    width: 250px;
+  }
+  .tracker .overlap-group4 {
+    height: 234px;
+    left: 120px;
+    position: absolute;
+    top: 177px;
+    width: 592px;
+  }
+  .tracker .overlap-group5 {
+    height: 254px;
+    margin-top: 56px;
+    position: relative;
+    width: 250px;
+  }
+  .tracker .overlap-group6 {
+    height: 256px;
+    left: 17px;
+    position: absolute;
+    top: 12px;
+    width: 997px;
+  }
+  .tracker .overlap-group7 {
+    height: 72px;
+    margin-left: 20px;
+    margin-top: -3px;
+    position: relative;
+    width: 720px;
+  }
+  .tracker .overlap-group9 {
+    height: 175px;
+    position: relative;
+    width: 141px;
+  }
+  .tracker .percent {
+    left: 589px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 428px;
+    width: 76px;
+  }
+  .tracker .percent-1 {
+    left: 393px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 626px;
+    width: 56px;
+  }
+  .tracker .percent-2 {
+    left: 482px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 528px;
+    width: 80px;
+  }
+  .tracker .percent-3 {
+    left: 296px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 491px;
+    width: 56px;
+  }
+  .tracker .percent-4 {
+    letter-spacing: 0;
+    min-height: 31px;
+    min-width: 56px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 56px;
+  }
+  .tracker .profile-i60173723 {
+    height: 36px;
+    left: 379px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 314px;
+  }
+  .tracker .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    left: 845px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 99px;
+    width: 199px;
+  }
+  .tracker .rectangle-19 {
+    background-color: var(--carnation-pink);
+    height: 51px;
+    left: 195px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 183px;
+    width: 204px;
+  }
+  .tracker .rectangle-20 {
+    background-color: var(--concrete);
+    border-radius: 10px;
+    height: 51px;
+    left: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 183px;
+    width: 259px;
+  }
+  .tracker .rectangle-22 {
+    background-color: var(--concrete);
+    border-radius: 10px;
+    height: 51px;
+    left: 344px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 183px;
+    width: 248px;
+  }
+  .tracker .rectangle-24 {
+    background-color: var(--anakiwa);
+    border-radius: 15px;
+    height: 55px;
+    left: -177px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 240px;
+    transform: rotate(90.00deg);
+    width: 408px;
+  }
+  .tracker .rectangle-25 {
+    background-color: var(--anakiwa);
+    border-radius: 15px;
+    height: 55px;
+    left: 37px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 258px;
+    transform: rotate(90.00deg);
+    width: 370px;
+  }
+  .tracker .rectangle-29 {
+    height: 276px;
+    left: 97px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 197px;
+    width: 55px;
+  }
+  .tracker .rectangle-3 {
+    height: 116px;
+    margin-left: 0.04px;
+    margin-top: 13px;
+    mix-blend-mode: normal;
+    width: 55px;
+  }
+  .tracker .rectangle-30 {
+    height: 472px;
+    left: 298px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    width: 55px;
+  }
+  .tracker .rectangle-42 {
+    height: 72px;
+    left: 51px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .tracker .rectangle-43 {
+    height: 70px;
+    left: 480px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .tracker .rectangle-45 {
+    background-color: var(--desert-storm);
+    border-radius: 4.349999904632568px;
+    height: 250px;
+    left: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    width: 250px;
+  }
+  .tracker .rectangle-48 {
+    height: 155px;
+    left: 27px;
+    position: absolute;
+    top: 91px;
+    width: 176px;
+  }
+  .tracker .rectangle-49 {
+    height: 128px;
+    left: 0;
+    position: absolute;
+    top: 48px;
+    width: 141px;
+  }
+  .tracker .request-a-volunteer {
+    cursor: pointer;
+    height: 36px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 337px;
+  }
+  .tracker .soar-throat {
+    height: 200px;
+    left: 41px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 367px;
+    width: 200px;
+  }
+  .tracker .sore-throat {
+    left: 28px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 331px;
+    width: 203px;
+  }
+  .tracker .temperature {
+    height: 201px;
+    left: 3px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  .tracker .temperature-1 {
+    height: 35px;
+    left: 172px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 109px;
+    width: 237px;
+  }
+  .tracker .text-9 {
+    left: 529px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 215px;
+    width: 468px;
+  }
+  .tracker .track-3 {
+    height: 96px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 120px;
+  }
+  .tracker .vector-1 {
+    height: 2px;
+    left: 23px;
+    position: absolute;
+    top: 108px;
+    width: 1445px;
+  }
+  .tracker .volunteer {
+    align-items: flex-start;
+    display: flex;
+    height: 69px;
+    left: 139px;
+    min-width: 1214px;
+    padding: 0 129.0px;
+    position: absolute;
+    top: 33px;
+  }
+  .tracker .volunteer-i6017376 {
+    align-self: center;
+    cursor: pointer;
+    height: 36px;
+    letter-spacing: 0;
+    margin-bottom: 7.0px;
+    min-height: 36px;
+    min-width: 204px;
+    mix-blend-mode: normal;
+    width: 204px;
+  }
+  .tracker .w {
+    left: 236px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 173px;
+    width: 126px;
+  }
+  .tracker .whhplantalt {
+    height: 59px;
+    left: 11px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 125px;
+    width: 59px;
+  }
+  .tracker .x29-14 {
+    height: 120px;
+    left: 1313px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .logs {
+    align-items: center;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .logs .character-rosa-posture1-happy {
+    height: 80px;
+    left: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 5px;
+    width: 80px;
+  }
+  .logs .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 399px;
+    min-height: 149px;
+    width: 221px;
+  }
+  .logs .flex-row {
+    align-items: flex-end;
+    display: flex;
+    height: 149px;
+    margin-left: 76.0px;
+    margin-top: 58px;
+    min-width: 1288px;
+  }
+  .logs .group-1 {
+    height: 90px;
+    margin-left: 2.0px;
+    margin-top: 12px;
+    mix-blend-mode: normal;
+    width: 1362px;
+  }
+  .logs .group-1-1 {
+    height: 90px;
+    margin-left: 2.0px;
+    margin-top: 12px;
+    width: 1362px;
+  }
+  .logs .group-17 {
+    align-self: flex-end;
+    height: 57px;
+    margin-right: 38px;
+    margin-top: 32px;
+    width: 230px;
+  }
+  .logs .group-9 {
+    height: 90px;
+    left: 6px;
+    position: absolute;
+    top: 0;
+    width: 1362px;
+  }
+  .logs .image-383 {
+    height: 30px;
+    left: 84px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+  .logs .image-955 {
+    height: 30px;
+    left: 71px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+  .logs .image-979 {
+    height: 30px;
+    left: 63px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+  .logs .new-entry {
+    height: 22px;
+    left: 15px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 18px;
+    width: 151px;
+  }
+  .logs .overlap-group {
+    height: 30px;
+    position: relative;
+    width: 128px;
+  }
+  .logs .overlap-group1 {
+    height: 30px;
+    margin-top: 62px;
+    position: relative;
+    width: 128px;
+  }
+  .logs .overlap-group2 {
+    align-self: flex-start;
+    height: 120px;
+    margin-left: -17px;
+    margin-top: -19px;
+    position: relative;
+    width: 1462px;
+  }
+  .logs .overlap-group3 {
+    align-self: flex-end;
+    height: 57px;
+    position: relative;
+    width: 172px;
+  }
+  .logs .overlap-group4 {
+    height: 30px;
+    margin-left: 412px;
+    position: relative;
+    width: 128px;
+  }
+  .logs .overlap-group5 {
+    height: 90px;
+    margin-right: 4.0px;
+    margin-top: 11px;
+    position: relative;
+    width: 1368px;
+  }
+  .logs .overlap-group6 {
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: -3px;
+    width: 1445px;
+  }
+  .logs .place {
+    height: 22px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 4px;
+    width: 128px;
+  }
+  .logs .profile-i60152823 {
+    cursor: pointer;
+    height: 36px;
+    left: 872px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 373px;
+  }
+  .logs .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    left: 507px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 106px;
+    width: 199px;
+  }
+  .logs .rectangle-22 {
+    cursor: pointer;
+    height: 57px;
+    left: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    width: 172px;
+  }
+  .logs .rectangle-42 {
+    height: 72px;
+    left: 406px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .logs .rectangle-43 {
+    height: 70px;
+    left: 834px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .logs .request-a-volunteer {
+    height: 36px;
+    left: 422px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 401px;
+  }
+  .logs .title {
+    height: 22px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 4px;
+    width: 128px;
+  }
+  .logs .track-3 {
+    height: 96px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    width: 120px;
+  }
+  .logs .vector-1 {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 71px;
+    width: 1445px;
+  }
+  .logs .view {
+    height: 22px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 4px;
+    width: 128px;
+  }
+  .logs .volunteer {
+    height: 69px;
+    left: 17px;
+    position: absolute;
+    top: 47px;
+    width: 1445px;
+  }
+  .logs .volunteer-i6015286 {
+    cursor: pointer;
+    height: 36px;
+    left: 154px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 13px;
+    width: 243px;
+  }
+  .logs .x29-14 {
+    height: 120px;
+    left: 1313px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .sign-up {
+    align-items: flex-start;
+    background-color: var(--baby-powder);
+    display: flex;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .sign-up .covid {
+    height: 328px;
+    left: 250px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 356px;
+  }
+  .sign-up .covid-1 {
+    height: 500px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 298px;
+    width: 500px;
+  }
+  .sign-up .covid-2 {
+    height: 328px;
+    margin-right: 28.0px;
+    margin-top: 172px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 356px;
+  }
+  .sign-up .covid-3 {
+    height: 500px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 500px;
+  }
+  .sign-up .covid-tracker {
+    height: 62px;
+    margin-right: 34.5px;
+    mix-blend-mode: normal;
+    width: 441px;
+  }
+  .sign-up .email {
+    height: 22px;
+    left: 149px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 499px;
+    width: 273px;
+  }
+  .sign-up .email-1 {
+    background-color: transparent;
+    border: 0;
+    color: var(--black-2);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl2);
+    font-style: normal;
+    font-weight: 400;
+    height: 58px;
+    left: 149px;
+    letter-spacing: 0;
+    line-height: normal;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 529px;
+    width: 441px;
+  }
+  .sign-up .email-1::placeholder {
+    color: #00000054;
+  }
+  .sign-up .flex-col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 744px;
+    min-height: 146px;
+    position: absolute;
+    top: 742px;
+    width: 393px;
+  }
+  .sign-up .flex-col-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: -68px;
+    min-height: 1000px;
+    width: 500px;
+  }
+  .sign-up .flex-col-2 {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: -189px;
+    margin-top: 34.5px;
+    min-height: 1092px;
+    width: 1164px;
+  }
+  .sign-up .group-44 {
+    cursor: pointer;
+    height: 57px;
+    margin-left: 3.0px;
+    width: 172px;
+  }
+  .sign-up .name {
+    background-color: transparent;
+    border: 0;
+    color: var(--black-2);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+    height: 57px;
+    left: 149px;
+    letter-spacing: 0;
+    line-height: normal;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 418px;
+    width: 441px;
+  }
+  .sign-up .name::placeholder {
+    color: #00000054;
+  }
+  .sign-up .overlap-group {
+    height: 702px;
+    left: 571px;
+    position: absolute;
+    top: 0;
+    width: 593px;
+  }
+  .sign-up .overlap-group1 {
+    height: 798px;
+    left: 0;
+    position: absolute;
+    top: 223px;
+    width: 606px;
+  }
+  .sign-up .overlap-group2 {
+    height: 1021px;
+    margin-top: 9px;
+    position: relative;
+    width: 1164px;
+  }
+  .sign-up .password {
+    background-color: transparent;
+    border: 0;
+    color: #00000080;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+    height: 57px;
+    left: 149px;
+    letter-spacing: 0;
+    line-height: normal;
+    mix-blend-mode: normal;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    text-align: left;
+    top: 645px;
+    width: 441px;
+  }
+  .sign-up .password-1 {
+    height: 22px;
+    left: 149px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 611px;
+    width: 273px;
+  }
+  .sign-up .password::placeholder {
+    color: #0000004c;
+  }
+  .sign-up .place {
+    height: 22px;
+    left: 149px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 387px;
+    width: 273px;
+  }
+  .sign-up .rectangle-23 {
+    background-color: var(--carnation-pink);
+    box-shadow: 4px 4px 10px #0000001a;
+    height: 57px;
+    left: 149px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 530px;
+    width: 439px;
+  }
+  .sign-up .rectangle-24 {
+    background-color: var(--carnation-pink);
+    box-shadow: 4px 4px 10px #0000001a;
+    height: 57px;
+    left: 149px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 642px;
+    width: 439px;
+  }
+  .sign-up .rectangle-25 {
+    background-color: var(--carnation-pink);
+    box-shadow: 4px 4px 10px #0000001a;
+    height: 57px;
+    left: 149px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 418px;
+    width: 439px;
+  }
+  .sign-up .rectangle-41 {
+    height: 328px;
+    left: 149px;
+    position: absolute;
+    top: 371px;
+    width: 444px;
+  }
+  .sign-up .text {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxxl2);
+    font-weight: 700;
+    height: 465px;
+    left: 138px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    transform: rotate(-143.40deg);
+    width: 2px;
+  }
+  .sign-up .text-1 {
+    height: 69px;
+    letter-spacing: 0;
+    margin-top: 20px;
+    min-height: 69px;
+    min-width: 393px;
+    text-align: center;
+    width: 393px;
+  }
+  .sign-up .track-1 {
+    height: 406px;
+    left: 86px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 507px;
+  }
+  .new-log {
+    align-items: flex-start;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .new-log .details {
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 318px;
+    width: 362px;
+  }
+  .new-log .feeling-sick {
+    height: 22px;
+    left: 30px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 20px;
+    width: 541px;
+  }
+  .new-log .group-19 {
+    align-self: flex-end;
+    cursor: pointer;
+    height: 57px;
+    margin-right: 37px;
+    width: 172px;
+  }
+  .new-log .image-105 {
+    height: 70px;
+    left: 476px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 106px;
+    width: 70px;
+  }
+  .new-log .image-165 {
+    height: 70px;
+    left: 284px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 110px;
+    width: 70px;
+  }
+  .new-log .image-20 {
+    height: 70px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 112px;
+    width: 70px;
+  }
+  .new-log .image-5 {
+    height: 70px;
+    left: 92px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 116px;
+    width: 70px;
+  }
+  .new-log .image-65 {
+    height: 70px;
+    left: 189px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 112px;
+    width: 70px;
+  }
+  .new-log .image-91 {
+    height: 70px;
+    left: 380px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 103px;
+    width: 70px;
+  }
+  .new-log .mood {
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 81px;
+    width: 362px;
+  }
+  .new-log .overlap-group {
+    height: 222px;
+    margin-left: -17px;
+    margin-top: -12px;
+    position: relative;
+    width: 1468px;
+  }
+  .new-log .overlap-group1 {
+    align-self: center;
+    height: 664px;
+    margin-left: 12.0px;
+    margin-top: 13px;
+    position: relative;
+    width: 1348px;
+  }
+  .new-log .overlap-group2 {
+    height: 72px;
+    margin-left: 20px;
+    margin-top: -3px;
+    position: relative;
+    width: 720px;
+  }
+  .new-log .polygon-1 {
+    height: 12px;
+    left: 612px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 26px;
+    width: 24px;
+  }
+  .new-log .polygon-3 {
+    height: 12px;
+    left: 612px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 261px;
+    width: 24px;
+  }
+  .new-log .profile-i60169723 {
+    cursor: pointer;
+    height: 36px;
+    left: 379px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 314px;
+  }
+  .new-log .public {
+    height: 22px;
+    left: 23px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 256px;
+    width: 402px;
+  }
+  .new-log .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    left: 551px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 99px;
+    width: 199px;
+  }
+  .new-log .rectangle-18 {
+    background-color: var(--carnation-pink);
+    height: 57px;
+    left: 9px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 4px;
+    width: 643px;
+  }
+  .new-log .rectangle-24 {
+    background-color: var(--carnation-pink);
+    height: 241px;
+    left: 9px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 359px;
+    width: 1339px;
+  }
+  .new-log .rectangle-25 {
+    background-color: var(--carnation-pink);
+    height: 57px;
+    left: 9px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 237px;
+    width: 643px;
+  }
+  .new-log .rectangle-42 {
+    height: 72px;
+    left: 51px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .new-log .rectangle-43 {
+    height: 70px;
+    left: 480px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .new-log .rectangle-46 {
+    height: 664px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    width: 647px;
+  }
+  .new-log .rectangle-50 {
+    border: 2px solid #ff9bc5;
+    height: 93px;
+    left: 464px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 94px;
+    width: 93px;
+  }
+  .new-log .request-a-volunteer {
+    height: 36px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 337px;
+  }
+  .new-log .span1 {
+    color: var(--tickle-me-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l2);
+  }
+  .new-log .text-7 {
+    left: 74px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 116px;
+    width: 1310px;
+  }
+  .new-log .text-8 {
+    left: 23px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 375px;
+    width: 1308px;
+  }
+  .new-log .title {
+    height: 22px;
+    letter-spacing: 0;
+    margin-left: 61px;
+    margin-top: 34px;
+    min-height: 22px;
+    mix-blend-mode: normal;
+    width: 362px;
+  }
+  .new-log .track-3 {
+    height: 96px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 120px;
+  }
+  .new-log .vector-1 {
+    height: 2px;
+    left: 23px;
+    position: absolute;
+    top: 108px;
+    width: 1445px;
+  }
+  .new-log .view {
+    height: 22px;
+    left: 9px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 198px;
+    width: 362px;
+  }
+  .new-log .volunteer {
+    align-items: flex-start;
+    display: flex;
+    height: 69px;
+    left: 139px;
+    min-width: 1214px;
+    padding: 0 129.0px;
+    position: absolute;
+    top: 33px;
+  }
+  .new-log .volunteer-i6016976 {
+    align-self: center;
+    cursor: pointer;
+    height: 36px;
+    letter-spacing: 0;
+    margin-bottom: 7.0px;
+    min-height: 36px;
+    min-width: 204px;
+    mix-blend-mode: normal;
+    width: 204px;
+  }
+  .new-log .x29-14 {
+    height: 120px;
+    left: 1313px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .questionnaire {
+    align-items: center;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 2173px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .questionnaire .ellipse- {
+    align-self: flex-end;
+    background-color: var(--mist-gray);
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+    mix-blend-mode: normal;
+    width: 40px;
+  }
+  .questionnaire .ellipse--1 {
+    background-color: var(--mist-gray);
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 284px;
+    margin-top: 1.0px;
+    mix-blend-mode: normal;
+    width: 40px;
+  }
+  .questionnaire .flex-row {
+    align-items: center;
+    display: flex;
+    height: 57px;
+    margin-left: 114.0px;
+    margin-top: 38px;
+    min-width: 602px;
+  }
+  .questionnaire .flex-row-1 {
+    align-items: center;
+    display: flex;
+    height: 57px;
+    margin-left: 78.0px;
+    margin-top: 26px;
+    min-width: 602px;
+  }
+  .questionnaire .flex-row-2 {
+    align-items: center;
+    display: flex;
+    height: 57px;
+    margin-left: 106.0px;
+    margin-top: 21px;
+    min-width: 602px;
+  }
+  .questionnaire .flex-row-3 {
+    align-items: center;
+    display: flex;
+    height: 57px;
+    margin-left: 78.0px;
+    margin-top: 47px;
+    min-width: 602px;
+  }
+  .questionnaire .flex-row-4 {
+    align-items: center;
+    display: flex;
+    height: 57px;
+    margin-left: 106.0px;
+    margin-top: 38px;
+    min-width: 602px;
+  }
+  .questionnaire .flex-row-5 {
+    align-items: center;
+    display: flex;
+    height: 57px;
+    margin-left: 78.0px;
+    margin-top: 17px;
+    min-width: 602px;
+  }
+  .questionnaire .group-17 {
+    align-self: flex-end;
+    cursor: pointer;
+    height: 57px;
+    margin-top: 151px;
+    width: 270px;
+  }
+  .questionnaire .overlap-group {
+    height: 248px;
+    margin-left: 5.0px;
+    margin-top: -9px;
+    position: relative;
+    width: 1445px;
+  }
+  .questionnaire .overlap-group1 {
+    height: 72px;
+    margin-left: 20px;
+    margin-top: -3px;
+    position: relative;
+    width: 720px;
+  }
+  .questionnaire .place {
+    align-self: flex-start;
+    letter-spacing: 0;
+    margin-left: 12px;
+    min-height: 42px;
+    min-width: 109px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 109px;
+  }
+  .questionnaire .profile-i62562373 {
+    height: 36px;
+    left: 379px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 314px;
+  }
+  .questionnaire .questionnaire-1 {
+    left: 421px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 118px;
+    width: 618px;
+  }
+  .questionnaire .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 21px;
+    left: 837px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 94px;
+    width: 199px;
+  }
+  .questionnaire .rectangle-42 {
+    height: 72px;
+    left: 51px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .questionnaire .rectangle-43 {
+    height: 70px;
+    left: 480px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .questionnaire .request-a-volunteer {
+    cursor: pointer;
+    height: 36px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 337px;
+  }
+  .questionnaire .text-10 {
+    letter-spacing: 0;
+    margin-left: 9.0px;
+    margin-top: 18px;
+    min-height: 209px;
+    min-width: 1387px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 1387px;
+  }
+  .questionnaire .text-11 {
+    left: 439px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 207px;
+    width: 640px;
+  }
+  .questionnaire .text-12 {
+    letter-spacing: 0;
+    margin-right: 9.0px;
+    margin-top: 48px;
+    min-height: 109px;
+    min-width: 1387px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 1387px;
+  }
+  .questionnaire .text-13 {
+    align-self: flex-start;
+    letter-spacing: 0;
+    margin-left: 5px;
+    margin-top: 86px;
+    min-height: 175px;
+    min-width: 1387px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 1387px;
+  }
+  .questionnaire .text-14 {
+    align-self: flex-start;
+    letter-spacing: 0;
+    margin-left: 5px;
+    margin-top: 53px;
+    min-height: 140px;
+    min-width: 1387px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 1387px;
+  }
+  .questionnaire .text-15 {
+    letter-spacing: 0;
+    margin-right: 9.0px;
+    margin-top: 57px;
+    min-height: 67px;
+    min-width: 1387px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 1387px;
+  }
+  .questionnaire .text-16 {
+    letter-spacing: 0;
+    margin-left: 9.0px;
+    margin-top: 55px;
+    min-height: 120px;
+    min-width: 1387px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 1387px;
+  }
+  .questionnaire .track-3 {
+    height: 104px;
+    left: 31px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 17px;
+    width: 130px;
+  }
+  .questionnaire .vector-1 {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 117px;
+    width: 1445px;
+  }
+  .questionnaire .volunteer {
+    align-items: flex-start;
+    display: flex;
+    height: 69px;
+    left: 122px;
+    min-width: 1214px;
+    padding: 0 129.0px;
+    position: absolute;
+    top: 31px;
+  }
+  .questionnaire .volunteer-i625662 {
+    align-self: center;
+    cursor: pointer;
+    height: 36px;
+    letter-spacing: 0;
+    margin-bottom: 7.0px;
+    min-height: 36px;
+    min-width: 204px;
+    mix-blend-mode: normal;
+    width: 204px;
+  }
+  .questionnaire .x29-14 {
+    height: 120px;
+    left: 1296px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 130px;
+  }
+  .questionnaire .yes {
+    letter-spacing: 0;
+    margin-left: 8px;
+    margin-top: 5.0px;
+    min-height: 42px;
+    min-width: 109px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 109px;
+  }
+  .result {
+    align-items: flex-end;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .result .group-17 {
+    cursor: pointer;
+    height: 57px;
+    margin-right: -1.77px;
+    width: 463px;
+  }
+  .result .home-quarantine {
+    height: 201px;
+    left: 1000px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 750px;
+    width: 200px;
+  }
+  .result .massk {
+    height: 200px;
+    left: 996px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 512px;
+    width: 200px;
+  }
+  .result .medicine {
+    height: 200px;
+    left: 830px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 520px;
+    width: 200px;
+  }
+  .result .no-handshake {
+    height: 200px;
+    left: 754px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 630px;
+    width: 200px;
+  }
+  .result .overlap-group {
+    height: 951px;
+    left: 0;
+    position: absolute;
+    top: 12px;
+    width: 1459px;
+  }
+  .result .overlap-group1 {
+    height: 120px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+    width: 1468px;
+  }
+  .result .overlap-group2 {
+    height: 72px;
+    margin-left: 20px;
+    margin-top: -3px;
+    position: relative;
+    width: 720px;
+  }
+  .result .overlap-group3 {
+    height: 963px;
+    margin-right: -11px;
+    margin-top: -12px;
+    position: relative;
+    width: 1470px;
+  }
+  .result .profile-i62517823 {
+    cursor: pointer;
+    height: 36px;
+    left: 379px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 314px;
+  }
+  .result .qurantine-preiod {
+    height: 201px;
+    left: 630px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 528px;
+    width: 200px;
+  }
+  .result .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    left: 845px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 99px;
+    width: 199px;
+  }
+  .result .rectangle-42 {
+    height: 72px;
+    left: 51px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .result .rectangle-43 {
+    height: 70px;
+    left: 480px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .result .request-a-volunteer {
+    cursor: pointer;
+    height: 36px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 337px;
+  }
+  .result .result-1 {
+    height: 53px;
+    left: 615px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 157px;
+    width: 218px;
+  }
+  .result .safety {
+    height: 200px;
+    left: 1259px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 429px;
+    width: 200px;
+  }
+  .result .safety-1 {
+    height: 200px;
+    left: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 419px;
+    width: 200px;
+  }
+  .result .sanitizer {
+    height: 200px;
+    left: 900px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 675px;
+    width: 200px;
+  }
+  .result .social-distance {
+    height: 200px;
+    left: 606px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 701px;
+    width: 200px;
+  }
+  .result .text-17 {
+    color: var(--tickle-me-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l);
+    font-style: italic;
+    font-weight: 600;
+    left: 519px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 266px;
+    width: 528px;
+  }
+  .result .text-18 {
+    color: var(--tickle-me-pink);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxxxxl);
+    font-weight: 500;
+    left: 166px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 482px;
+    width: 1125px;
+  }
+  .result .text-19 {
+    color: var(--blue-jeans);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    font-weight: 500;
+    left: 141px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 597px;
+    width: 1125px;
+  }
+  .result .there-is-a-75-c-u-have-covid-19 {
+    height: 55px;
+    left: 254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 358px;
+    width: 1041px;
+  }
+  .result .track-3 {
+    height: 96px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 120px;
+  }
+  .result .vector-1 {
+    height: 2px;
+    left: 23px;
+    position: absolute;
+    top: 108px;
+    width: 1445px;
+  }
+  .result .volunteer {
+    align-items: flex-start;
+    display: flex;
+    height: 69px;
+    left: 139px;
+    min-width: 1214px;
+    padding: 0 129.0px;
+    position: absolute;
+    top: 33px;
+  }
+  .result .volunteer-i6251786 {
+    align-self: center;
+    cursor: pointer;
+    height: 36px;
+    letter-spacing: 0;
+    margin-bottom: 7.0px;
+    min-height: 36px;
+    min-width: 204px;
+    mix-blend-mode: normal;
+    width: 204px;
+  }
+  .result .washing-hands {
+    height: 200px;
+    left: 1083px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 610px;
+    width: 200px;
+  }
+  .result .x29-14 {
+    height: 120px;
+    left: 1313px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .sign-up-filled {
+    align-items: flex-start;
+    background-color: var(--baby-powder);
+    display: flex;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .sign-up-filled .bri-carter05gmailcom {
+    height: 27px;
+    left: 99px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 546px;
+    width: 311px;
+  }
+  .sign-up-filled .brianna-carter {
+    height: 21px;
+    left: 164px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 436px;
+    width: 182px;
+  }
+  .sign-up-filled .covid {
+    height: 500px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 298px;
+    width: 500px;
+  }
+  .sign-up-filled .covid-1 {
+    height: 328px;
+    left: 250px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 356px;
+  }
+  .sign-up-filled .covid-2 {
+    height: 328px;
+    margin-right: 28.0px;
+    margin-top: 172px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 356px;
+  }
+  .sign-up-filled .covid-3 {
+    height: 500px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 500px;
+  }
+  .sign-up-filled .covid-tracker {
+    height: 62px;
+    margin-right: 3.0px;
+    mix-blend-mode: normal;
+    width: 441px;
+  }
+  .sign-up-filled .ellipse- {
+    background-color: var(--black);
+    border-radius: 7px;
+    height: 14px;
+    margin-left: 15px;
+    mix-blend-mode: normal;
+    width: 14px;
+  }
+  .sign-up-filled .ellipse-15 {
+    background-color: var(--black);
+    border-radius: 7px;
+    height: 14px;
+    mix-blend-mode: normal;
+    width: 14px;
+  }
+  .sign-up-filled .email {
+    height: 22px;
+    left: 63px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 499px;
+    width: 273px;
+  }
+  .sign-up-filled .flex-col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: -68px;
+    min-height: 1000px;
+    width: 500px;
+  }
+  .sign-up-filled .flex-col-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 51px;
+    margin-top: 34.5px;
+    min-height: 960px;
+    width: 507px;
+  }
+  .sign-up-filled .group-43 {
+    cursor: pointer;
+    height: 57px;
+    margin-left: 57.0px;
+    margin-top: 39px;
+    width: 172px;
+  }
+  .sign-up-filled .group-46 {
+    align-items: flex-start;
+    display: flex;
+    height: 14px;
+    left: 90px;
+    min-width: 217px;
+    position: absolute;
+    top: 664px;
+  }
+  .sign-up-filled .overlap-group {
+    height: 699px;
+    margin-top: 9px;
+    position: relative;
+    width: 507px;
+  }
+  .sign-up-filled .overlap-group1 {
+    height: 798px;
+    margin-left: -189px;
+    margin-top: 329px;
+    position: relative;
+    width: 606px;
+  }
+  .sign-up-filled .password {
+    height: 22px;
+    left: 63px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 611px;
+    width: 273px;
+  }
+  .sign-up-filled .place {
+    height: 22px;
+    left: 63px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 387px;
+    width: 273px;
+  }
+  .sign-up-filled .rectangle-23 {
+    background-color: var(--carnation-pink);
+    box-shadow: 4px 4px 10px #0000001a;
+    height: 57px;
+    left: 63px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 530px;
+    width: 439px;
+  }
+  .sign-up-filled .rectangle-24 {
+    background-color: var(--carnation-pink);
+    box-shadow: 4px 4px 10px #0000001a;
+    height: 57px;
+    left: 63px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 642px;
+    width: 439px;
+  }
+  .sign-up-filled .rectangle-25 {
+    background-color: var(--carnation-pink);
+    box-shadow: 4px 4px 10px #0000001a;
+    height: 57px;
+    left: 63px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 418px;
+    width: 439px;
+  }
+  .sign-up-filled .rectangle-41 {
+    height: 328px;
+    left: 63px;
+    position: absolute;
+    top: 371px;
+    width: 444px;
+  }
+  .sign-up-filled .text-2 {
+    align-self: flex-end;
+    height: 69px;
+    letter-spacing: 0;
+    margin-right: 27px;
+    margin-top: 24px;
+    min-height: 69px;
+    min-width: 393px;
+    text-align: center;
+    width: 393px;
+  }
+  .sign-up-filled .track-1 {
+    height: 406px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 507px;
+  }
+  .book-an-appointment {
+    align-items: flex-end;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .book-an-appointment .address {
+    height: 88px;
+    left: 271px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 463px;
+    width: 492px;
+  }
+  .book-an-appointment .address-1 {
+    height: 22px;
+    left: 130px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1px;
+    width: 401px;
+  }
+  .book-an-appointment .appoitment-details {
+    height: 22px;
+    left: 27px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 733px;
+    width: 539px;
+  }
+  .book-an-appointment .ellipse {
+    height: 36px;
+    left: 5px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 6px;
+    width: 36px;
+  }
+  .book-an-appointment .ellipse-2 {
+    background-color: var(--anakiwa);
+    border-radius: 23px;
+    height: 46px;
+    left: 0;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 46px;
+  }
+  .book-an-appointment .flex-col {
+    align-items: flex-start;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    min-height: 56px;
+    width: 243px;
+  }
+  .book-an-appointment .flex-row {
+    align-items: flex-start;
+    display: flex;
+    height: 68px;
+    margin-right: 40px;
+    margin-top: 16px;
+    min-width: 1181px;
+  }
+  .book-an-appointment .group-2 {
+    align-items: flex-start;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    left: 219px;
+    min-width: 26px;
+    position: absolute;
+    top: 463px;
+  }
+  .book-an-appointment .image-1408 {
+    height: 44px;
+    left: 1056px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 521px;
+    width: 44px;
+  }
+  .book-an-appointment .image-1611 {
+    height: 140px;
+    left: 45px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 360px;
+    width: 140px;
+  }
+  .book-an-appointment .location {
+    height: 22px;
+    left: 0;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  .book-an-appointment .maps-markers-cu-location-marker {
+    align-items: flex-start;
+    background-color: var(--anakiwa);
+    display: flex;
+    height: 46px;
+    left: 878px;
+    min-width: 46px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 768px;
+  }
+  .book-an-appointment .overlap-group {
+    height: 120px;
+    left: 7px;
+    position: absolute;
+    top: 0;
+    width: 1550px;
+  }
+  .book-an-appointment .overlap-group1 {
+    height: 23px;
+    left: 726px;
+    position: absolute;
+    top: 262px;
+    width: 531px;
+  }
+  .book-an-appointment .overlap-group2 {
+    height: 924px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 1410px;
+  }
+  .book-an-appointment .overlap-group3 {
+    height: 924px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 670px;
+  }
+  .book-an-appointment .overlap-group4 {
+    align-self: flex-end;
+    height: 57px;
+    position: relative;
+    width: 172px;
+  }
+  .book-an-appointment .overlap-group5 {
+    height: 72px;
+    margin-left: 9px;
+    margin-top: -3px;
+    position: relative;
+    width: 417px;
+  }
+  .book-an-appointment .overlap-group5-1 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/vector-2@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 36px;
+    margin-top: -2.16px;
+    min-width: 30px;
+    padding: 8.2px 8px;
+  }
+  .book-an-appointment .overlap-group6 {
+    height: 70px;
+    margin-left: 12px;
+    margin-top: -1px;
+    position: relative;
+    width: 411px;
+  }
+  .book-an-appointment .overlap-group6-1 {
+    background-color: var(--anakiwa);
+    border-radius: 23px;
+    height: 46px;
+    position: relative;
+    width: 46px;
+  }
+  .book-an-appointment .overlap-group7 {
+    height: 942px;
+    margin-right: -117px;
+    margin-top: -18px;
+    position: relative;
+    width: 1557px;
+  }
+  .book-an-appointment .phone {
+    left: 281px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 610px;
+    width: 282px;
+  }
+  .book-an-appointment .place {
+    height: 22px;
+    left: 20px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 16px;
+    width: 129px;
+  }
+  .book-an-appointment .profile {
+    height: 58px;
+    left: 27px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 285px;
+    width: 362px;
+  }
+  .book-an-appointment .profile-i62550823 {
+    cursor: pointer;
+    height: 36px;
+    left: 38px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 14px;
+    width: 373px;
+  }
+  .book-an-appointment .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    margin-top: 10px;
+    mix-blend-mode: normal;
+    width: 199px;
+  }
+  .book-an-appointment .rectangle-18 {
+    height: 331px;
+    left: 31px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 346px;
+    width: 639px;
+  }
+  .book-an-appointment .rectangle-21 {
+    height: 641px;
+    left: 697px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 283px;
+    width: 713px;
+  }
+  .book-an-appointment .rectangle-24 {
+    cursor: pointer;
+    height: 57px;
+    left: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    width: 172px;
+  }
+  .book-an-appointment .rectangle-40 {
+    height: 156px;
+    left: 31px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 768px;
+    width: 639px;
+  }
+  .book-an-appointment .rectangle-42 {
+    height: 72px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .book-an-appointment .rectangle-43 {
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 240px;
+  }
+  .book-an-appointment .request-a-volunteer {
+    cursor: pointer;
+    height: 36px;
+    left: 16px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 401px;
+  }
+  .book-an-appointment .span1 {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxl);
+  }
+  .book-an-appointment .text {
+    color: var(--black);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m);
+    height: 22px;
+    left: 999px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 351px;
+    width: 191px;
+  }
+  .book-an-appointment .text-3 {
+    left: 31px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 146px;
+    width: 1381px;
+  }
+  .book-an-appointment .text-4 {
+    letter-spacing: 0;
+    margin-left: 306px;
+    min-height: 41px;
+    min-width: 703px;
+    mix-blend-mode: normal;
+    text-align: center;
+    width: 703px;
+  }
+  .book-an-appointment .text-5 {
+    left: 247px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 373px;
+    width: 451px;
+  }
+  .book-an-appointment .text-6 {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxl);
+    left: 42px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 791px;
+    width: 604px;
+  }
+  .book-an-appointment .track-3 {
+    height: 96px;
+    left: 0;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 13px;
+    width: 120px;
+  }
+  .book-an-appointment .vector {
+    height: 14px;
+    width: 14px;
+  }
+  .book-an-appointment .vector-1 {
+    height: 34px;
+    left: 215px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 612px;
+    width: 34px;
+  }
+  .book-an-appointment .vector-3 {
+    height: 242px;
+    left: 901px;
+    position: absolute;
+    top: 552px;
+    width: 191px;
+  }
+  .book-an-appointment .volunteer {
+    align-items: flex-start;
+    display: flex;
+    height: 69px;
+    left: 105px;
+    min-width: 1445px;
+    padding: 0 153.5px;
+    position: absolute;
+    top: 29px;
+  }
+  .book-an-appointment .volunteer-i6255086 {
+    cursor: pointer;
+    height: 36px;
+    letter-spacing: 0;
+    min-height: 36px;
+    mix-blend-mode: normal;
+    width: 243px;
+  }
+  .book-an-appointment .x29-14 {
+    height: 120px;
+    left: 1313px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .hospital-map-view {
+    align-items: flex-start;
+    background-color: var(--baby-powder);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    width: 1440px;
+  }
+  .hospital-map-view .average-wait-time {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 273px;
+    mix-blend-mode: normal;
+    width: 273px;
+  }
+  .hospital-map-view .borough {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 273px;
+    mix-blend-mode: normal;
+    width: 273px;
+  }
+  .hospital-map-view .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 221.0px;
+    margin-left: 52px;
+    min-height: 266px;
+    width: 68px;
+  }
+  .hospital-map-view .flex-col-1 {
+    align-items: flex-end;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 44px;
+    margin-top: 75px;
+    min-height: 489px;
+    width: 461px;
+  }
+  .hospital-map-view .flex-row {
+    align-items: flex-end;
+    display: flex;
+    height: 31px;
+    margin-left: 63.5px;
+    margin-top: 11px;
+    min-width: 1014px;
+  }
+  .hospital-map-view .flex-row-1 {
+    align-items: flex-start;
+    display: flex;
+    height: 66px;
+    min-width: 461px;
+  }
+  .hospital-map-view .flex-row-2 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    margin-left: 7.0px;
+    margin-top: 9px;
+    min-width: 1363px;
+  }
+  .hospital-map-view .image-14 {
+    align-self: flex-end;
+    height: 44px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1419 {
+    height: 44px;
+    margin-top: 178px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1420 {
+    height: 44px;
+    margin-left: 65px;
+    margin-top: 293.0px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1421 {
+    align-self: center;
+    height: 44px;
+    margin-left: 101.0px;
+    margin-top: 84px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1423 {
+    height: 44px;
+    margin-top: 205.0px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1424 {
+    height: 44px;
+    margin-right: 57.0px;
+    margin-top: 251px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1425 {
+    cursor: pointer;
+    height: 44px;
+    margin-bottom: 151.0px;
+    margin-left: 65px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1426 {
+    height: 44px;
+    margin-left: 373px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .image-1427 {
+    align-self: flex-start;
+    height: 44px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    width: 44px;
+  }
+  .hospital-map-view .overlap-group {
+    align-items: center;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-23@1x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    height: 791px;
+    margin-left: 2px;
+    margin-top: 27px;
+    min-width: 1442px;
+    padding: 0 250.5px;
+  }
+  .hospital-map-view .overlap-group1 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-25@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    min-width: 368px;
+    padding: 16px 19.0px;
+  }
+  .hospital-map-view .overlap-group2 {
+    align-items: flex-end;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-24@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    margin-left: 31px;
+    min-width: 173px;
+    padding: 17px 20.5px;
+  }
+  .hospital-map-view .overlap-group3 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-27@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    margin-left: 28px;
+    min-width: 367px;
+    padding: 16px 14.5px;
+  }
+  .hospital-map-view .overlap-group4 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-27@2x.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 57px;
+    justify-content: flex-end;
+    margin-left: 29px;
+    min-width: 367px;
+    padding: 16px 18.0px;
+  }
+  .hospital-map-view .overlap-group5 {
+    height: 120px;
+    margin-left: 2px;
+    margin-top: -12px;
+    position: relative;
+    width: 1445px;
+  }
+  .hospital-map-view .overlap-group6 {
+    height: 73px;
+    left: 0;
+    position: absolute;
+    top: -3px;
+    width: 1445px;
+  }
+  .hospital-map-view .polygon-3 {
+    align-self: center;
+    height: 12px;
+    margin-bottom: 1.0px;
+    margin-left: 31px;
+    mix-blend-mode: normal;
+    width: 23px;
+  }
+  .hospital-map-view .polygon-4 {
+    align-self: center;
+    height: 12px;
+    margin-bottom: 1.0px;
+    margin-left: 37px;
+    mix-blend-mode: normal;
+    width: 24px;
+  }
+  .hospital-map-view .polygon-5 {
+    align-self: center;
+    height: 12px;
+    margin-bottom: 1.0px;
+    margin-left: 31px;
+    mix-blend-mode: normal;
+    width: 24px;
+  }
+  .hospital-map-view .profile-i60128523 {
+    cursor: pointer;
+    height: 36px;
+    left: 872px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 373px;
+  }
+  .hospital-map-view .rectangle-10 {
+    background-color: var(--anakiwa);
+    height: 10px;
+    left: 154px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 62px;
+    width: 199px;
+  }
+  .hospital-map-view .rectangle-42 {
+    height: 72px;
+    left: 406px;
+    position: absolute;
+    top: 0;
+    width: 415px;
+  }
+  .hospital-map-view .rectangle-43 {
+    height: 70px;
+    left: 834px;
+    position: absolute;
+    top: 2px;
+    width: 240px;
+  }
+  .hospital-map-view .request-a-volunteer {
+    cursor: pointer;
+    height: 36px;
+    left: 422px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 16px;
+    width: 401px;
+  }
+  .hospital-map-view .search {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 129px;
+    mix-blend-mode: normal;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    width: 129px;
+  }
+  .hospital-map-view .track-3 {
+    height: 96px;
+    left: 5px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 120px;
+  }
+  .hospital-map-view .vector-1 {
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 71px;
+    width: 1445px;
+  }
+  .hospital-map-view .volunteer {
+    height: 69px;
+    left: 0;
+    position: absolute;
+    top: 37px;
+    width: 1445px;
+  }
+  .hospital-map-view .volunteer-i6012856 {
+    height: 36px;
+    left: 154px;
+    letter-spacing: 0;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 13px;
+    width: 243px;
+  }
+  .hospital-map-view .wait-time {
+    align-self: flex-start;
+    height: 22px;
+    letter-spacing: 0;
+    margin-left: 134px;
+    min-height: 22px;
+    mix-blend-mode: normal;
+    width: 245px;
+  }
+  .hospital-map-view .x29-14 {
+    height: 120px;
+    left: 1318px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  .hospital-map-view .zip-code {
+    height: 22px;
+    letter-spacing: 0;
+    margin-left: 116px;
+    min-height: 22px;
+    min-width: 245px;
+    mix-blend-mode: normal;
+    width: 245px;
+  }
+  .hospital-map-view .zip-code-1 {
+    height: 22px;
+    letter-spacing: 0;
+    min-height: 22px;
+    min-width: 273px;
+    mix-blend-mode: normal;
+    width: 273px;
+  }
+
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Poppins:400,600italic,700,300,500,600,200,300italic|Noto+Sans:400,700");
+  * {
+    box-sizing: border-box;
+  }
+  .align-self-flex-center {
+    align-self: flex-center;
+  }
+  .align-self-flex-end {
+    align-self: flex-end;
+  }
+  .container-center-horizontal {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .container-center-horizontal > * {
+    pointer-events: auto;
+    flex-shrink: 0;
+  }
+  .screen a {
+    text-decoration: none;
+    display: contents;
+  }
+  .valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  </style>
+<div class="container-center-horizontal">
+  <div class="book-an-appointment screen">
+    <div class="overlap-group7">
+      <div class="overlap-group">
+        <img
+          class="track-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+        />
+        <img
+          class="x29-14"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+        />
+        <div class="volunteer">
+          <div class="flex-col">
+            <a href="hospital-map-view.html"
+              ><div class="volunteer-i6255086 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+            >
+            <div class="rectangle-10"></div>
+          </div>
+          <div class="overlap-group5">
+            <a href="logs.html"
+              ><div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+              </div></a
+            >
+            <div class="rectangle-42"></div>
+          </div>
+          <div class="overlap-group6">
+            <a href="tracker.html"
+              ><div class="profile-i62550823 valign-text-middle poppins-bold-black-36px">Tracker</div></a
+            >
+            <div class="rectangle-43"></div>
+          </div>
+        </div>
+      </div>
+      <div class="overlap-group2">
+        <div class="text valign-text-middle"></div>
+        <img
+          class="rectangle-21"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/rectangle-21@1x.png"
+        />
+        <img
+          class="image-1408"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1408@2x.png"
+        />
+        <img
+          class="rectangle-18"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/rectangle-18@1x.svg"
+        />
+        <div class="address valign-text-middle poppins-medium-black-30px">
+          115 Dreiser Loop Bronx,<br />
+          NY 10475
+        </div>
+        <img
+          class="vector-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/vector@2x.svg"
+        />
+        <div class="group-2">
+          <div class="overlap-group5-1">
+            <img
+              class="vector"
+              src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/vector-4@2x.svg"
+            />
+          </div>
+        </div>
+        <img
+          class="image-1611"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1611@2x.png"
+        />
+        <img
+          class="vector-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/vector-3@2x.svg"
+        />
+        <div class="maps-markers-cu-location-marker">
+          <div class="overlap-group6-1">
+            <div class="ellipse-2"></div>
+            <img
+              class="ellipse"
+              src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/ellipse@2x.svg"
+            />
+          </div>
+        </div>
+        <div class="text-5 poppins-bold-black-35px">
+          <span class="span poppins-bold-black-35px">Mount Sinai Hospital<br /></span><span class="span1"></span>
+        </div>
+        <div class="phone poppins-medium-black-30px">347-400-4561</div>
+      </div>
+      <div class="text-3 poppins-bold-white-26px-2">
+        <span class="span poppins-bold-tickle-me-pink-26px"
+          >Thank you for booking an appointment, Bianna Carter!<br /></span
+        ><span class="span poppins-normal-black-22px"
+          >Your appoitment was successfully booked. Please see the details of your appoitment down below.</span
+        >
+      </div>
+      <div class="overlap-group1">
+        <div class="location valign-text-middle poppins-bold-tickle-me-pink-26px">Location</div>
+        <div class="address-1 valign-text-middle poppins-normal-black-22px">115 Dreiser Loop Bronx, NY 10475</div>
+      </div>
+      <div class="profile valign-text-middle poppins-bold-blue-jeans-45px">Profile</div>
+      <div class="overlap-group3">
+        <img
+          class="rectangle-40"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/rectangle-40@1x.svg"
+        />
+        <div class="text-6">Date: May 21, 2021<br />Time: 4:00 PM- 5 PM</div>
+      </div>
+      <div class="appoitment-details valign-text-middle poppins-bold-blue-jeans-45px">Appoitment Details</div>
+    </div>
+    <div class="flex-row">
+      <div class="overlap-group4">
+        <a href="hospital-map-view.html"
+          ><img
+            class="rectangle-24"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/rectangle-24-1@2x.svg"
+        /></a>
+        <div class="place valign-text-middle poppins-bold-white-26px">Back</div>
+      </div>
+      <div class="text-4 poppins-normal-black-22px">
+        Your hospital destination is about a 5 mintue drive or a 15 mintue walk.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="hospital-map-view screen">
+    <div class="overlap-group5">
+      <img
+        class="track-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+      />
+      <img
+        class="x29-14"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+      />
+      <div class="volunteer">
+        <div class="volunteer-i6012856 valign-text-middle poppins-bold-black-36px">Hospitals</div>
+        <div class="overlap-group6">
+          <a href="logs.html"
+            ><div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+            </div></a
+          >
+          <div class="rectangle-10"></div>
+          <img
+            class="vector-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+          />
+          <a href="tracker.html"
+            ><div class="profile-i60128523 valign-text-middle poppins-bold-black-36px">Tracker</div></a
+          >
+          <div class="rectangle-42"></div>
+          <div class="rectangle-43"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="borough valign-text-middle poppins-bold-black-26px">Borough</div>
+      <div class="zip-code valign-text-middle poppins-bold-black-26px">Zip Code</div>
+      <div class="wait-time valign-text-middle poppins-bold-black-26px">Wait Time</div>
+    </div>
+    <div class="flex-row-2">
+      <div class="overlap-group1">
+        <div class="borough valign-text-middle poppins-extra-light-black-22px">Borough</div>
+        <img
+          class="polygon-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/polygon-3@2x.svg"
+        />
+      </div>
+      <div class="overlap-group3">
+        <div class="zip-code-1 valign-text-middle poppins-extra-light-black-22px">Zip Code</div>
+        <img
+          class="polygon-4"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/polygon-4@2x.svg"
+        />
+      </div>
+      <div class="overlap-group4">
+        <div class="average-wait-time valign-text-middle poppins-extra-light-black-22px">Average Wait Time</div>
+        <img
+          class="polygon-5"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/polygon-4@2x.svg"
+        />
+      </div>
+      <div class="overlap-group2"><div class="search valign-text-middle poppins-bold-white-26px">Search</div></div>
+    </div>
+    <div class="overlap-group">
+      <img
+        class="image-1423"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+      />
+      <div class="flex-col">
+        <img
+          class="image-14"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+        />
+        <img
+          class="image-1419"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+        />
+      </div>
+      <img
+        class="image-1427"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+      />
+      <img
+        class="image-1420"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+      />
+      <div class="flex-col-1">
+        <div class="flex-row-1">
+          <img
+            class="image-14"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+          />
+          <img
+            class="image-1426"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+          />
+        </div>
+        <img
+          class="image-1421"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+        />
+        <img
+          class="image-1424"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+        />
+      </div>
+      <a href="hospital-selected-map-view.html"
+        ><img
+          class="image-1425"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/image-1425@2x.png"
+      /></a>
+    </div>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="hospital-selected-map-view screen">
+    <div class="overlap-group2">
+      <img
+        class="track-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+      />
+      <img
+        class="x29-14"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+      />
+      <div class="volunteer">
+        <a href="hospital-map-view.html"
+          ><div class="volunteer-i6014436 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+        >
+        <div class="overlap-group6-1">
+          <a href="logs.html"
+            ><div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+            </div></a
+          >
+          <div class="rectangle-10"></div>
+          <img
+            class="vector-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+          />
+          <a href="tracker.html"
+            ><div class="profile-i60144323 valign-text-middle poppins-bold-black-36px">Tracker</div></a
+          >
+          <div class="rectangle-42"></div>
+          <div class="rectangle-43"></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlap-group1">
+      <img
+        class="rectangle-29"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-23@1x.png"
+      />
+      <div class="group-33">
+        <div class="overlap-group6"><div class="place-4 valign-text-middle">Back</div></div>
+      </div>
+      <img
+        class="image-1428"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1429"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1430"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1431"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1432"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1433"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1434"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1435"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1435@2x.png"
+      />
+      <img
+        class="image-1436"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="image-1437"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-1428@2x.png"
+      />
+      <img
+        class="rectangle-34-1"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-22@2x.svg"
+      />
+      <div class="group-36">
+        <div class="overlap-group7"><div class="place valign-text-middle poppins-bold-eerie-black-26px">Back</div></div>
+      </div>
+      <div class="rectangle-34"></div>
+      <a href="book-an-appointment.html">
+        <div class="group-37">
+          <div class="overlap-group8">
+            <div class="book-an-appoitment valign-text-middle poppins-bold-eerie-black-26px">Book an appoitment</div>
+          </div>
+        </div></a
+      >
+      <a href="hospital-map-view.html">
+        <div class="group-38">
+          <div class="overlap-group9">
+            <div class="place-1 valign-text-middle poppins-bold-eerie-black-26px">Back</div>
+          </div>
+        </div></a
+      >
+      <div class="maps-markers-cu-location-marker">
+        <div class="overlap-group10">
+          <div class="ellipse-2"></div>
+          <img
+            class="ellipse"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/ellipse-1@2x.svg"
+          />
+        </div>
+      </div>
+      <div class="wait-time valign-text-middle poppins-bold-black-26px">Wait Time</div>
+      <div class="place-2 valign-text-middle poppins-bold-black-26px">Hospital</div>
+      <div class="x15-20-mintues valign-text-middle poppins-normal-black-22px">15-20 mintues</div>
+      <div class="percent valign-text-middle poppins-normal-black-22px">75%</div>
+      <div class="address valign-text-middle poppins-normal-black-22px">1 mile away</div>
+      <div class="date poppins-normal-black-22px">24 hours</div>
+      <div class="place-3 valign-text-middle poppins-normal-black-22px">Mount Sinai</div>
+      <div class="distance valign-text-middle poppins-bold-black-26px">Distance</div>
+      <div class="capacity valign-text-middle poppins-bold-black-26px">Capacity</div>
+      <div class="open valign-text-middle poppins-bold-black-26px">Open</div>
+    </div>
+    <div class="overlap-group"><div class="search valign-text-middle poppins-bold-white-26px">Search</div></div>
+    <div class="overlap-group3">
+      <div class="zip-code valign-text-middle poppins-extra-light-black-22px">Zip Code</div>
+      <img
+        class="polygon-7"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/polygon-4@2x.svg"
+      />
+    </div>
+    <div class="overlap-group4">
+      <div class="borough-1 valign-text-middle poppins-extra-light-black-22px">Borough</div>
+      <img
+        class="polygon-6"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/polygon-3@2x.svg"
+      />
+    </div>
+    <div class="overlap-group5">
+      <div class="average-wait-time valign-text-middle poppins-extra-light-black-22px">Average Wait Time</div>
+      <img
+        class="polygon-8"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/polygon-4@2x.svg"
+      />
+    </div>
+    <div class="borough valign-text-middle poppins-bold-black-26px">Borough</div>
+    <div class="zip-code-1 valign-text-middle poppins-bold-black-26px">Zip Code</div>
+    <div class="wait-time-1 valign-text-middle poppins-bold-black-26px">Wait Time</div>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="logs screen">
+    <div class="overlap-group2">
+      <img
+        class="track-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+      />
+      <img
+        class="x29-14"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+      />
+      <div class="volunteer">
+        <a href="hospital-map-view.html"
+          ><div class="volunteer-i6015286 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+        >
+        <div class="overlap-group6">
+          <div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+          </div>
+          <img
+            class="vector-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+          />
+          <a href="tracker.html"
+            ><div class="profile-i60152823 valign-text-middle poppins-bold-black-36px">Tracker</div></a
+          >
+          <div class="rectangle-42"></div>
+          <div class="rectangle-43"></div>
+        </div>
+      </div>
+      <div class="rectangle-10"></div>
+    </div>
+    <div class="flex-row">
+      <div class="overlap-group">
+        <div class="title valign-text-middle poppins-bold-black-26px">Title</div>
+        <img
+          class="image-979"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-979@2x.png"
+        />
+      </div>
+      <div class="overlap-group4">
+        <div class="place valign-text-middle poppins-bold-black-26px">Date</div>
+        <img
+          class="image-955"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-955@2x.png"
+        />
+      </div>
+      <div class="flex-col">
+        <div class="overlap-group3">
+          <a href="new-log.html"
+            ><img
+              class="rectangle-22"
+              src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-22@2x.svg"
+          /></a>
+          <div class="new-entry valign-text-middle poppins-bold-white-26px">New Entry</div>
+        </div>
+        <div class="overlap-group1">
+          <div class="view valign-text-middle poppins-bold-black-26px">View</div>
+          <img
+            class="image-383"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/image-383@2x.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="overlap-group5">
+      <img
+        class="group-9"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-9@1x.svg"
+      />
+      <div class="character-rosa-posture1-happy"></div>
+    </div>
+    <img
+      class="group-1"
+      src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-10@1x.svg"
+    />
+    <img
+      class="group-1-1"
+      src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-11@1x.svg"
+    />
+    <img
+      class="group-1"
+      src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-12@1x.svg"
+    />
+    <img
+      class="group-1-1"
+      src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-13@1x.svg"
+    />
+    <img
+      class="group-1"
+      src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-14@1x.svg"
+    />
+    <img
+      class="group-17"
+      src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-17@2x.svg"
+    />
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="new-log screen">
+    <div class="overlap-group">
+      <div class="text-7 poppins-bold-white-26px-2">
+        <span>New Log Entry<br /></span
+        ><span class="span1"
+          >Write how you are feeling! Be descriptive as this could help your doctor asses you better when you go to
+          appoitments.</span
+        >
+      </div>
+      <img
+        class="track-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+      />
+      <img
+        class="x29-14"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+      />
+      <div class="volunteer">
+        <a href="hospital-map-view.html" class="align-self-flex-center"
+          ><div class="volunteer-i6016976 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+        >
+        <div class="overlap-group2">
+          <div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+          </div>
+          <a href="tracker.html"
+            ><div class="profile-i60169723 valign-text-middle poppins-bold-black-36px">Tracker</div></a
+          >
+          <div class="rectangle-42"></div>
+          <div class="rectangle-43"></div>
+        </div>
+      </div>
+      <div class="rectangle-10"></div>
+      <img
+        class="vector-1"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+      />
+    </div>
+    <div class="title valign-text-middle poppins-bold-blue-jeans-26px">Title</div>
+    <div class="overlap-group1">
+      <div class="rectangle-18"></div>
+      <div class="rectangle-25"></div>
+      <div class="rectangle-24"></div>
+      <div class="feeling-sick valign-text-middle poppins-extra-light-black-22px">Feeling Sick</div>
+      <div class="public valign-text-middle poppins-extra-light-black-22px">Public</div>
+      <div class="text-8 poppins-extra-light-black-22px">
+        Lorem ipsum dolor sit amet, per euripidis deseruisse moderatius eu, mea alia adipiscing in, epicurei prodesset
+        cum ne. Sed at oratio recusabo. Est labitur repudiandae ei, putant melius theophrastus usu ne. Diam epicurei
+        adversarium te cum. Sea facete cetero ei, per appetere voluptatum te.<br />Cu mei wisi ponderum partiendo,
+        forensibus interesset per ei, mel id bonorum atomorum. Quem ipsum delicata vix ad. Integre eloquentiam id has.
+        Amet postulant definitionem sit at, eum vidisse oblique et. Duo in interpretaris signiferumque, dicit essent
+        laoreet mei cu.
+      </div>
+      <div class="mood valign-text-middle poppins-bold-blue-jeans-26px">Mood</div>
+      <div class="view valign-text-middle poppins-bold-blue-jeans-26px">View</div>
+      <div class="details valign-text-middle poppins-bold-blue-jeans-26px">Details</div>
+      <img
+        class="polygon-1"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/polygon-1@2x.svg"
+      />
+      <img
+        class="polygon-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/polygon-1@2x.svg"
+      />
+      <div class="rectangle-46"></div>
+      <img
+        class="image-20"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-20@2x.png"
+      />
+      <img
+        class="image-5"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-5@2x.png"
+      />
+      <img
+        class="image-65"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-65@2x.png"
+      />
+      <img
+        class="image-91"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-91@2x.png"
+      />
+      <img
+        class="image-105"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-105@2x.png"
+      />
+      <img
+        class="image-165"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/image-165@2x.png"
+      />
+      <div class="rectangle-50"></div>
+    </div>
+    <a href="logs.html" class="align-self-flex-end"
+      ><img
+        class="group-19"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/group-19@2x.svg"
+    /></a>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="questionnaire screen">
+    <div class="overlap-group">
+      <img
+        class="track-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/track-3-5@2x.png"
+      />
+      <img
+        class="x29-14"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/29-14-5@2x.png"
+      />
+      <div class="volunteer">
+        <a href="hospital-map-view.html" class="align-self-flex-center"
+          ><div class="volunteer-i625662 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+        >
+        <div class="overlap-group1">
+          <a href="logs.html"
+            ><div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+            </div></a
+          >
+          <div class="profile-i62562373 valign-text-middle poppins-bold-black-36px">Tracker</div>
+          <div class="rectangle-42"></div>
+          <div class="rectangle-43"></div>
+        </div>
+      </div>
+      <div class="rectangle-10"></div>
+      <img
+        class="vector-1"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+      />
+      <div class="text-11 poppins-light-tickle-me-pink-25px">Complete honestly and truthfully for the best result</div>
+      <div class="questionnaire-1 poppins-medium-tickle-me-pink-60px">Questionnaire</div>
+    </div>
+    <div class="text-10 poppins-normal-blue-jeans-35px">
+      Have you experienced any of the following symptoms in the past 48 hours:<br />•fever or chills•cough•shortness of
+      breath or difficulty breathing•fatigue•muscle or body aches•headache•new loss of taste or smell•sore
+      throat•congestion or runny nose•nausea or vomiting•diarrhea
+    </div>
+    <div class="flex-row">
+      <div class="ellipse-"></div>
+      <div class="yes poppins-bold-carnation-pink-35px">Yes</div>
+      <div class="ellipse--1"></div>
+      <div class="place poppins-bold-carnation-pink-35px">No</div>
+    </div>
+    <div class="text-16 poppins-normal-blue-jeans-35px">
+      2. Are you isolating or quarantining because you tested positive for COVID-19 or are worried that you may be sick
+      with CVID-19?
+    </div>
+    <div class="flex-row-2">
+      <div class="ellipse-"></div>
+      <div class="yes poppins-bold-carnation-pink-35px">Yes</div>
+      <div class="ellipse--1"></div>
+      <div class="place poppins-bold-carnation-pink-35px">No</div>
+    </div>
+    <div class="text-12 poppins-normal-blue-jeans-35px">
+      3. Are you fully vaccinated OR have you recovered from a documented COVID-19 infection in the last 3 months?
+    </div>
+    <div class="flex-row-4">
+      <div class="ellipse-"></div>
+      <div class="yes poppins-bold-carnation-pink-35px">Yes</div>
+      <div class="ellipse--1"></div>
+      <div class="place poppins-bold-carnation-pink-35px">No</div>
+    </div>
+    <div class="text-13 poppins-normal-blue-jeans-35px">
+      4. Have you been in close physical contact in the last 14 days with: Anyone who is known to have
+      laboratory-confirmed COVID-19? OR Anyone who has any symptoms consistent with COVID-19?
+    </div>
+    <div class="flex-row-5">
+      <div class="ellipse-"></div>
+      <div class="yes poppins-bold-carnation-pink-35px">Yes</div>
+      <div class="ellipse--1"></div>
+      <div class="place poppins-bold-carnation-pink-35px">No</div>
+    </div>
+    <div class="text-14 poppins-normal-blue-jeans-35px">
+      5. Are you currently waiting on the results of a COVID-19 test?<br />ANSWER “NO” IF YOU ARE WAITING ON THE RESULTS
+      OF A PRE-TRAVEL OR POST-TRAVEL COVID-19 TEST
+    </div>
+    <div class="flex-row-3">
+      <div class="ellipse-"></div>
+      <div class="yes poppins-bold-carnation-pink-35px">Yes</div>
+      <div class="ellipse--1"></div>
+      <div class="place poppins-bold-carnation-pink-35px">No</div>
+    </div>
+    <div class="text-15 poppins-normal-blue-jeans-35px">6. Have you traveled in the past 10 days?</div>
+    <div class="flex-row-1">
+      <div class="ellipse-"></div>
+      <div class="yes poppins-bold-carnation-pink-35px">Yes</div>
+      <div class="ellipse--1"></div>
+      <div class="place poppins-bold-carnation-pink-35px">No</div>
+    </div>
+    <a href="result.html" class="align-self-flex-end"
+      ><img
+        class="group-17"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/group-17-1@2x.svg"
+    /></a>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="result screen">
+    <div class="overlap-group3">
+      <div class="overlap-group1">
+        <img
+          class="track-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+        />
+        <img
+          class="x29-14"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+        />
+        <div class="volunteer">
+          <a href="hospital-map-view.html" class="align-self-flex-center"
+            ><div class="volunteer-i6251786 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+          >
+          <div class="overlap-group2">
+            <a href="logs.html"
+              ><div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+              </div></a
+            >
+            <a href="tracker.html"
+              ><div class="profile-i62517823 valign-text-middle poppins-bold-black-36px">Tracker</div></a
+            >
+            <div class="rectangle-42"></div>
+            <div class="rectangle-43"></div>
+          </div>
+        </div>
+        <div class="rectangle-10"></div>
+        <img
+          class="vector-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+        >
+      </div>
+      <center><div class="text-17"> <font size="+3"><strong>  There is a <br> <font size="+3">{{prob}}%</font> <br> chance you have COVID.</strong> </font>
+        <br> <br> This is just advice, not 100% accurate.</div></center>
+      <img
+        class="result-1"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/result@2x.svg"
+      />
+      <div class="overlap-group">
+        <div class="text-18">To ensure your safety &amp; the safety of others:</div>
+        <div class="text-19">
+          Quarantine for 14 days.<br />Don’t touch others.<br />Use hand santizer<br />Wash your hands regularly<br />Social
+          Distance<br />Wear your mask<br />And santize touched items (table, door knobs, etc.)
+        </div>
+        <img
+          class="safety-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/safety@2x.png"
+        />
+        <img
+          class="safety"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/safety@2x.png"
+        />
+        <img
+          class="qurantine-preiod"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/qurantine-preiod@2x.png"
+        />
+        <img
+          class="no-handshake"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/no-handshake@2x.png"
+        />
+        <img
+          class="medicine"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/medicine@2x.png"
+        />
+        <img
+          class="massk"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/massk@2x.png"
+        />
+        <img
+          class="sanitizer"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/sanitizer@2x.png"
+        />
+        <img
+          class="social-distance"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/social-distance@2x.png"
+        />
+        <img
+          class="home-quarantine"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/home-quarantine@2x.png"
+        />
+        <img
+          class="washing-hands"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/washing-hands@2x.png"
+        />
+      </div>
+    </div>
+    <a href="tracker.html"
+      ><img
+        class="group-17"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/group-17-2@2x.svg"
+    /></a>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <form class="sign-up screen" name="form1" action="form1" method="post">
+    <div class="flex-col-2">
+      <img
+        class="covid-tracker"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid-tracker@2x.svg"
+      />
+      <div class="overlap-group2">
+        <div class="overlap-group">
+          <div class="rectangle-23"></div>
+          <div class="rectangle-25"></div>
+          <div class="rectangle-24"></div>
+          <div class="email valign-text-middle poppins-bold-anakiwa-22px">Email</div>
+          <div class="place valign-text-middle poppins-bold-anakiwa-22px">Name</div>
+          <div class="password-1 valign-text-middle poppins-bold-anakiwa-22px">Password</div>
+          <div class="rectangle-41"></div>
+          <img
+            class="track-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-1@1x.png"
+          />
+          <div class="text valign-text-middle"></div>
+          <textarea class="name" name="name" placeholder="Name" type="text" required></textarea>
+          <textarea class="email-1" name="email" placeholder="Email" type="email" required></textarea>
+          <textarea class="password" name="password" placeholder="Password" type="password" required></textarea>
+        </div>
+        <div class="flex-col">
+          <a href="javascript:SubmitForm('form1')"
+            ><img
+              class="group-44"
+              src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/group-43@2x.svg"
+          /></a>
+          <div class="text-1 valign-text-middle poppins-medium-white-22px">
+            <span
+              ><span>Already have an account?<br /></span
+              ><span class="span poppins-medium-carnation-pink-22px">Login here</span>
+            </span>
+          </div>
+        </div>
+        <div class="overlap-group1">
+          <img
+            class="covid"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid-1@2x.png"
+          />
+          <img
+            class="covid-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid@1x.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex-col-1">
+      <img
+        class="covid-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid@1x.png"
+      />
+      <img
+        class="covid-2"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid-1@2x.png"
+      />
+    </div>
+  </form>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="sign-up-filled screen">
+    <div class="overlap-group1">
+      <img
+        class="covid-1"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid-1@2x.png"
+      />
+      <img
+        class="covid"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid@1x.png"
+      />
+    </div>
+    <div class="flex-col-1">
+      <img
+        class="covid-tracker"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid-tracker@2x.svg"
+      />
+      <div class="overlap-group">
+        <div class="rectangle-23"></div>
+        <div class="rectangle-25"></div>
+        <img
+          class="brianna-carter"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/brianna-carter@2x.svg"
+        />
+        <div class="rectangle-24"></div>
+        <div class="email valign-text-middle poppins-bold-anakiwa-22px">Email</div>
+        <img
+          class="bri-carter05gmailcom"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/bri--carter05-gmail-com@2x.svg"
+        />
+        <div class="place valign-text-middle poppins-bold-anakiwa-22px">Name</div>
+        <div class="password valign-text-middle poppins-bold-anakiwa-22px">Password</div>
+        <div class="rectangle-41"></div>
+        <img
+          class="track-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-1@1x.png"
+        />
+        <div class="group-46">
+          <div class="ellipse-15"></div>
+          <div class="ellipse-"></div>
+          <div class="ellipse-"></div>
+          <div class="ellipse-"></div>
+          <div class="ellipse-"></div>
+          <div class="ellipse-"></div>
+          <div class="ellipse-"></div>
+          <div class="ellipse-"></div>
+        </div>
+      </div>
+      <a href="hospital-map-view.html"
+        ><img
+          class="group-43"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/group-43@2x.svg"
+      /></a>
+      <div class="text-2 valign-text-middle poppins-medium-white-22px">
+        <span
+          ><span class="span poppins-medium-anakiwa-22px">Already have an account?<br /></span
+          ><span class="span poppins-medium-carnation-pink-22px">Login here</span>
+        </span>
+      </div>
+    </div>
+    <div class="flex-col">
+      <img
+        class="covid-3"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid@1x.png"
+      />
+      <img
+        class="covid-2"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/covid-1@2x.png"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container-center-horizontal">
+  <div class="tracker screen">
+    <div class="overlap-group10">
+      <div class="overlap-group1">
+        <img
+          class="track-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/track-3@2x.png"
+        />
+        <img
+          class="x29-14"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02bce8641b998163a4e4b/img/29-14@2x.png"
+        />
+        <div class="volunteer">
+          <a href="hospital-map-view.html" class="align-self-flex-center"
+            ><div class="volunteer-i6017376 valign-text-middle poppins-bold-black-36px">Hospitals</div></a
+          >
+          <div class="overlap-group7">
+            <a href="logs.html"
+              ><div class="request-a-volunteer valign-text-middle poppins-bold-black-36px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs
+              </div></a
+            >
+            <div class="profile-i60173723 valign-text-middle poppins-bold-black-36px">Tracker</div>
+            <div class="rectangle-42"></div>
+            <div class="rectangle-43"></div>
+          </div>
+        </div>
+        <div class="rectangle-10"></div>
+        <img
+          class="vector-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/vector-1@1x.svg"
+        />
+      </div>
+      <div class="flex-col-1">
+        <img
+          class="check-for-these-syptoms"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/check-for-these-syptoms@2x.svg"
+        />
+        <div class="flex-row">
+          <div class="flex-col-2">
+            <div class="overlap-group3">
+              <div class="group-">
+                <div class="overlap-group-1">
+                  <div class="bxbx-search-1"></div>
+                  <div class="rectangle-48"></div>
+                  <div class="rectangle-45 border-1px-bon-jour"></div>
+                </div>
+              </div>
+              <div class="group-">
+                <div class="overlap-group-1">
+                  <div class="bxbx-search-1"></div>
+                  <div class="rectangle-48"></div>
+                  <div class="rectangle-45 border-1px-bon-jour"></div>
+                </div>
+              </div>
+              <div class="headache poppins-bold-anakiwa-25px">Headache</div>
+              <img
+                class="headache-1"
+                src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/headache@2x.png"
+              />
+            </div>
+            <div class="overlap-group5">
+              <div class="group-">
+                <div class="overlap-group-1">
+                  <div class="bxbx-search-1"></div>
+                  <div class="rectangle-48"></div>
+                  <div class="rectangle-45 border-1px-bon-jour"></div>
+                </div>
+              </div>
+              <div class="fever poppins-bold-anakiwa-25px">Fever</div>
+              <img
+                class="fever-1"
+                src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/fever@2x.png"
+              />
+            </div>
+          </div>
+          <div class="overlap-group2">
+            <div class="group-61">
+              <div class="overlap-group-1">
+                <div class="bxbx-search-1"></div>
+                <div class="rectangle-48"></div>
+                <div class="rectangle-45 border-1px-bon-jour"></div>
+              </div>
+            </div>
+            <div class="group-">
+              <div class="overlap-group-1">
+                <div class="bxbx-search-1"></div>
+                <div class="rectangle-48"></div>
+                <div class="rectangle-45 border-1px-bon-jour"></div>
+              </div>
+            </div>
+            <div class="group-55">
+              <div class="overlap-group9">
+                <div class="bxbx-search"></div>
+                <div class="whhplantalt"></div>
+                <div class="rectangle-49"></div>
+              </div>
+            </div>
+            <div class="sore-throat poppins-bold-carnation-pink-25px">Sore&nbsp;&nbsp;Throat</div>
+            <div class="coughing-1 poppins-bold-carnation-pink-25px">Coughing</div>
+            <img
+              class="coughing"
+              src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/coughing@2x.png"
+            />
+            <img
+              class="soar-throat"
+              src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/soar-throat@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="overlap-group4">
+        <img
+          class="temperature-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/temperature@2x.svg"
+        />
+        <div class="rectangle-20"></div>
+        <div class="rectangle-22"></div>
+        <div class="rectangle-19"></div>
+        <div class="w poppins-normal-storm-dust-45px">W</div>
+        <div class="d poppins-normal-storm-dust-45px">D</div>
+        <div class="m poppins-normal-storm-dust-45px">M</div>
+        <img
+          class="temperature"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/temperature@2x.png"
+        />
+      </div>
+      <div class="overlap-group6">
+        <div class="text-9 poppins-light-tickle-me-pink-25px">Data gained from your C-19 Tracker</div>
+        <h1 class="c-19-tracker-data poppins-medium-tickle-me-pink-60px">C-19 Tracker Data</h1>
+      </div>
+      <div class="flex-col">
+        <div class="percent-4 poppins-bold-anakiwa-25px">30%</div>
+        <img
+          class="rectangle-3"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-3@2x.svg"
+        />
+      </div>
+      <div class="overlap-group">
+        <img
+          class="rectangle-30"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-30@2x.svg"
+        />
+        <img
+          class="rectangle-29"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/rectangle-29@2x.svg"
+        />
+        <div class="rectangle-25"></div>
+        <div class="rectangle-24"></div>
+      </div>
+      <div class="percent poppins-bold-anakiwa-25px">100%</div>
+      <div class="percent-2 poppins-bold-carnation-pink-25px">80%</div>
+      <div class="percent-3 poppins-bold-carnation-pink-25px">90%</div>
+      <div class="percent-1 poppins-bold-anakiwa-25px">60%</div>
+    </div>
+    <div class="flex-row-1">
+      <img
+        class="before"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/before@2x.svg"
+      />
+      <img
+        class="last-5-weeks"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/last-5-weeks@2x.svg"
+      />
+      <img
+        class="now"
+        src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a02d85be9def8884f64ce5/img/now@2x.svg"
+      />
+      <a href="questionnaire.html"
+        ><img
+          class="group-17"
+          src="https://anima-uploads.s3.amazonaws.com/projects/60a02b674a5b8cd6aa2faec2/releases/60a06454be9def8884f64d19/img/group-17-3@2x.svg"
+      /></a>
+    </div>
+  </div>
+</div>
